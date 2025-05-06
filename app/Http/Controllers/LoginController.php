@@ -11,7 +11,7 @@ class LoginController extends Controller
     public function loginBackend()
     {
         return view('backend.v_login.login', [
-        'judul' => 'Login',
+            'judul' => 'Login',
         ]);
     }
 
@@ -20,7 +20,7 @@ class LoginController extends Controller
         $credentials = $request->validate([
             'email' => 'required|email',
             'password' => 'required'
-            ]);
+        ]);
         if (Auth::attempt($credentials)) {
             if (Auth::user()->status == 0) {
                 Auth::logout();
