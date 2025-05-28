@@ -1,5 +1,6 @@
 @extends('backend.v_layouts.app') 
-@section('content') <!-- contentAwal -->
+@section('content') 
+<!-- contentAwal -->
     <div class="row">
         <div class="col-12">
             <div class="card">
