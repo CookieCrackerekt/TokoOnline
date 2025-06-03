@@ -6,7 +6,10 @@
             <div class="col-12">
                 <div class="card">
                     <form action="{{ route('backend.produk.update', $edit->id) }}" method="post"
-                        enctype="multipart/form-data"> @method('put') @csrf <div class="card-body">
+                        enctype="multipart/form-data"> 
+                        @method('put') 
+                        @csrf 
+                        <div class="card-body">
                             <h4 class="card-title"> {{$judul}} </h4>
                             <div class="row">
                                 <div class="col-md-4">
@@ -78,9 +81,9 @@
                             </div>
                         </div>
                         <div class="border-top">
-                            <div class="card-body"> <button type="submit" class="btn btn-primary">Perbaharui</button> <a
-                                    href="{{ route('backend.produk.index') }}"> <button type="button"
-                                        class="btn btn-secondary">Kembali</button> </a> </div>
+                            <div class="card-body"> 
+                                <button type="submit" class="btn btn-primary">Perbaharui</button> <a href="{{ route('backend.produk.index') }}"> 
+                                <button type="button" class="btn btn-secondary">Kembali</button> </a> </div>
                         </div>
                     </form>
                 </div>

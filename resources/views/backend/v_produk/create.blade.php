@@ -6,7 +6,9 @@
             <div class="col-12">
                 <div class="card">
                     <form class="form-horizontal" action="{{ route('backend.produk.store') }}" method="post"
-                        enctype="multipart/form-data"> @csrf <div class="card-body">
+                        enctype="multipart/form-data"> 
+                        @csrf 
+                        <div class="card-body">
                             <h4 class="card-title"> {{$judul}} </h4>
                             <div class="row">
                                 <div class="col-md-4">
